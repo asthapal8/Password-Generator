@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator by Astha</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <h1>Password Generator</h1>
+
+            <div class="screen">
+                <input readonly placeholder="Password" class="display" displayArea>
+                <button class="datacpy">
+                    <span class="copymsg"></span>
+                    <img src="cpyimg.png" alt="copy" width="23" height="23">
+                </button>
+            </div>
+
+            <div class="inputCard">
+
+                <div class="length">
+                    <p>Password Length</p>
+                    <p class="number">0</p>
+                </div>
+
+                <input type="range" min="1" max="20" class="slider" step="1">
+
+                <div class="check">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Capital Letters</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Small Letters</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Digits</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Special Characters</label>
+                </div>
+
+                <div class="strength">
+                    <p>Strength</p>
+                    <div class="indicator"></div>
+                </div>
+
+                <button class="generate">
+                    Generate Password
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/7dc1996bcc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
